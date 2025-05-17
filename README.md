@@ -32,3 +32,6 @@ O projeto consiste em desenvolver um software de controle via PWM para aplicaç�
 3. Ajuste da velocidade da ventoinha para ventilação e exaustão a partir das mudanças nas variáveis de temperatura e umidade relativa;
 
 4. Apresentação dos valores das variáveis emuladas e status do sistema via display.
+
+
+## Mapeamento das portas (teste.ioc) ![MapeamentoPortas](https://github.com/user-attachments/assets/f4c24dea-967b-4e9c-9ea4-fa6a582366e7)
