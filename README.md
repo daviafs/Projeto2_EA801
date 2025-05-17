@@ -40,10 +40,10 @@ O projeto consiste em desenvolver um software de controle via PWM para aplicaç�
 ![Projeto1 drawio](https://github.com/user-attachments/assets/6de09160-3b30-433d-8074-248ff48ea927)
 
 ## Imagens de funcionamento
-![image](https://github.com/user-attachments/assets/31bab5e8-e6f5-4bbb-8e0a-5185b94da3db)
 
+![Funcionamento1](https://github.com/user-attachments/assets/41a8247f-cd21-41ba-a354-7393d1e4cb7c)
 Descrição da imagem: Do lado esquerdo, o modo de operação considerando a composição de cor ‘Full espectro’ e 35% de intensidade (Médio), e valores de temperatura e umidade relativa. Do lado direito,  o modo de operação considerando a composição de cor ‘Pink’ e 10% de intensidade. Ambos apresentam os valores para temperatura e umidade relativa. No loop principal, o sistema atualiza continuamente a velocidade das ventoinhas com base na leitura do joystick, verifica os botões A e B para ajuste da intensidade e cor dos LEDs, e monitora o estado de um switch que alterna entre duas páginas de exibição: Home e Debug.
 
-![image](https://github.com/user-attachments/assets/31bab5e8-e6f5-4bbb-8e0a-5185b94da3db)
+![Funcionamento2](https://github.com/user-attachments/assets/33ab90f5-a6bf-406e-a859-47a422eb76d0)
 
 Descrição da imagem: Diferenças entres as informações apresentadas pelo display OLED nos modos ‘Home’, à esquerda (mais “user-friendly”), e ‘Debug’ (suporte à falha), à direita. Diferentemente da tela principal, a tela de debug oferece uma interface completa para monitoramento e análise detalhada do funcionamento do sistema em tempo real. Nessa tela, o usuário pode visualizar os valores atualizados da velocidade de cada ventoinha (duty cycle), os dados reais de temperatura e umidade lidos pelo sensor SHT20, o estado dos botões A e B (pressionados ou não), bem como os sinais enviados à matriz de LEDs RGB, permitindo observar o controle preciso da intensidade luminosa. Além disso, a interface exibe o tipo de composição de cor selecionado e sua intensidade atual, facilitando o acompanhamento do comportamento visual dos LEDs
