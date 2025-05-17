@@ -35,11 +35,11 @@ O projeto consiste em desenvolver um software de controle via PWM para aplicaç�
 
 ## Funcionamento
 
-Para alcançar os objetivos propostos, foi desenvolvido um programa em C, a nível de registradores, via software STM32CubeIDE. O upload do código na placa necessitou de um dispositivo ST-Link para conexão via porta USB. A lógica do algotitmo a ser desenvolvido contou, de maneira geral, com as seguintes funções:
+Para alcançar os objetivos propostos, foi desenvolvido um programa em C, a nível de registradores, via software STM32CubeIDE. O upload do código na placa necessitou de um dispositivo ST-Link para conexão via porta USB. A lógica do algoritmo a ser desenvolvido contou, de maneira geral, com as seguintes funções:
 
 Controle PWM da ventoinhas:
 - Envio e leitura de um sinal ADC de 8 bits para o módulo PWM
-- Setar o Duty Cycle para cada ventoina ventoinhas
+- Seta o Duty Cycle para cada ventoinha
 - Atualizar as ventoinhas: offset e regulação pelo joystick
 
 Comunicação I2C com sensor:
@@ -50,7 +50,7 @@ Atualização do sistema:
 - Atualiza o que está sendo apresentado no display OLED
 - Checar o estado dos botões (leitura, debounce, checar memória)
 - Atualiza os valores da Matriz LED GRB
-Atualiza valo do offset de tempemperatura e umidade relativa
+- Atualiza valo do offset de temperatura e umidade relativa
 
 
 ## Mapeamento das portas (teste.ioc) ![MapeamentoPortas](https://github.com/user-attachments/assets/f4c24dea-967b-4e9c-9ea4-fa6a582366e7)
