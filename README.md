@@ -33,6 +33,8 @@ O projeto consiste em desenvolver um software de controle via PWM para aplicaç�
 
 4. Apresentação dos valores das variáveis emuladas e status do sistema via display.
 
+## Funcionamento
+
 Para alcançar os objetivos propostos, foi desenvolvido um programa em C, a nível de registradores, via software STM32CubeIDE. O upload do código na placa necessitou de um dispositivo ST-Link para conexão via porta USB. A lógica do algotitmo a ser desenvolvido contou, de maneira geral, com as seguintes funções:
 
 Controle PWM da ventoinhas:
