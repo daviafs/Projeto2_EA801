@@ -53,8 +53,7 @@ Atualiza valo do offset de tempemperatura e umidade relativa
 
 ## Mapeamento das portas (teste.ioc) ![MapeamentoPortas](https://github.com/user-attachments/assets/f4c24dea-967b-4e9c-9ea4-fa6a582366e7)
 
-## Fluxograma
-![Projeto1 drawio](https://github.com/user-attachments/assets/6de09160-3b30-433d-8074-248ff48ea927)
+## Fluxograma![Fluxograma_projeto2](https://github.com/user-attachments/assets/152b5a93-73d6-4521-8fc4-7513ee5543ed)
 
 ## Imagens de funcionamento
 
