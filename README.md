@@ -33,7 +33,6 @@ O projeto consiste em desenvolver um software de controle via PWM para aplicaç�
 
 4. Apresentação dos valores das variáveis emuladas e status do sistema via display.
 
-
 ## Mapeamento das portas (teste.ioc) ![MapeamentoPortas](https://github.com/user-attachments/assets/f4c24dea-967b-4e9c-9ea4-fa6a582366e7)
 
 ## Fluxograma
@@ -47,3 +46,43 @@ Descrição da imagem: Do lado esquerdo, o modo de operação considerando a com
 ![Funcionamento2](https://github.com/user-attachments/assets/33ab90f5-a6bf-406e-a859-47a422eb76d0)
 
 Descrição da imagem: Diferenças entres as informações apresentadas pelo display OLED nos modos ‘Home’, à esquerda (mais “user-friendly”), e ‘Debug’ (suporte à falha), à direita. Diferentemente da tela principal, a tela de debug oferece uma interface completa para monitoramento e análise detalhada do funcionamento do sistema em tempo real. Nessa tela, o usuário pode visualizar os valores atualizados da velocidade de cada ventoinha (duty cycle), os dados reais de temperatura e umidade lidos pelo sensor SHT20, o estado dos botões A e B (pressionados ou não), bem como os sinais enviados à matriz de LEDs RGB, permitindo observar o controle preciso da intensidade luminosa. Além disso, a interface exibe o tipo de composição de cor selecionado e sua intensidade atual, facilitando o acompanhamento do comportamento visual dos LEDs
+
+
+## Especificações dos periféricos
+
+Sensor de Umidade e Temperatura
+- Modelo: SHT20
+- Encapsulamento: IP65
+- Medição  (UR): 0 a 100 % ± 3%
+- Medição (Temp.): -40°C a 125°C ± 0,3°C 
+- Tensão: 3 a 5,5V DC;
+- Interface de comunicação: I2C;
+- Tempo de resposta: 8s;
+- Realizar medições temporizadas de temperatura e umidade relativa do ambiente e envio dos dados para a STM32 black pill
+
+Módulo Driver PWM 
+- Modelo: D4184;
+- Tensão: 5-36 VDC;
+- Tensão de PWM: 3,3-20V;
+- Frequência do PWM = 0-20 KHZ
+- Corrente: 15A;
+- Potência: 400W;
+- Função: Controle da velocidade das ventoinhas através dos sinais da black pill
+
+Ventoinhas
+- Motor Brushless CC
+- Tensão de Entrada: 12V
+- Corrente: 0,18 A
+- Potência: 2,16 W
+- Função: Uma ventoinha foi usada para controle de temperatura (ventilação) e outra para controle de umidade (exaustão)
+
+Conversor AC-DC:
+- Modelo: ADP-30BW K
+- Tensão de Entrada: 100-240 VAC (60Hz)
+- Corrente de Entrada: 1 A (Alternada)
+- Tensão de Saída: 12 VDC
+- Corrente de Saída: 2,5 A (Contínua)
+- Função: Alimentação das ventoinhas
+
+
+
